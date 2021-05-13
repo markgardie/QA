@@ -15,6 +15,6 @@ public class HomePage  {
         driver.get("https://rozetka.com.ua/");
     }
 
-    
+
 
 }
