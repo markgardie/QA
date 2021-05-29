@@ -12,7 +12,7 @@ public class HomePage  {
     }
 
     public void open(){
-        driver.get("https://rozetka.com.ua/");
+        driver.get("http://ccte.nau.edu.ua/");
     }
 
 
