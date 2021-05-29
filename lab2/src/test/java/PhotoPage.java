@@ -14,17 +14,15 @@ public class PhotoPage {
         wait = new WebDriverWait(driver, 10);
     }
 
-    @FindBy(id = "header")
+    @FindBy(id = "wrapper_row4")
     private WebElement header;
 
-    private By photoLocator = By.cssSelector("[href=\"http://ccte.nau.edu.ua/%D0%A4%D0%BE%D1%82%D0%BE.html\"]");
-    private By galleryLocator = By.cssSelector("[href=\"http://ccte.nau.edu.ua/gallery/dock-galleryProgrammer/index.html\"]");
+    private By photoLocator = By.linkText("Фото.html");
 
-   public void open(){
-       header.findElement(photoLocator).click();
-       header.findElement(galleryLocator).click();
+    public void getStarted() {
+        header.findElement(photoLocator).click();
+
     }
-
     public String  getCurrentUrl() {
         return driver.getCurrentUrl();
     }

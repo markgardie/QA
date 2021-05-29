@@ -15,6 +15,4 @@ public class HomePage  {
         driver.get("http://ccte.nau.edu.ua/");
     }
 
-
-
 }
