@@ -10,7 +10,7 @@ public class Tests extends WebDriverSettings {
         homePage.open();
 
         PhotoPage photoPage = PageFactory.initElements(driver, PhotoPage.class);
-        photoPage.open();
+        photoPage.getStarted();
 
         Assert.assertTrue(photoPage.getCurrentUrl().equals("http://ccte.nau.edu.ua/gallery/dock-galleryProgrammer/index.html"));
     }
@@ -21,7 +21,7 @@ public class Tests extends WebDriverSettings {
         homePage.open();
 
         VideoPage videoPage = PageFactory.initElements(driver, VideoPage.class);
-        videoPage.open();
+        videoPage.getStarted();
 
         Assert.assertTrue(videoPage.getCurrentUrl().equals("http://ccte.nau.edu.ua/%D0%A4%D0%BE%D1%82%D0%BE.html"));
     }
